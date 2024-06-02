@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goggins Timing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Goggins Timing</h1>
+        <div class="timer">
+            <span id="minutes">25</span>:<span id="seconds">00</span>
+        </div>
+        <div class="time-setter">
+            <input type="number" id="timeInput" min="1" max="120" placeholder="Set time (min)">
+            <button id="setTime">Set Time</button>
+        </div>
+    </div>
+    <div class="controls">
+        <button id="start"><img src="start-icon.png" alt="Start"></button>
+        <button id="pause"><img src="pause-icon.png" alt="Pause"></button>
+        <button id="reset"><img src="reset-icon.png" alt="Reset"></button>
+    </div>
+    <audio id="alarmAudio" src="alarme.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
